@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/538289f370.js" crossorigin="anonymous"></script>
     <title>Login-landing</title>
 </head>
 <body>
-    <article>
-        <section>
-            <div>
-                <img src="./Login-landing.png" alt="">
-            </div>
-            <form action="" class="form">
-                <input type="email" name="" id="email" placeholder="Email">
-                <input type="password" name="" id="password" placeholder="Password">
-                <label for="checkbox"> <input type="checkbox" name="" id="">Remember me</label>
-                <input type="submit" value="Login">
+    <article class="padre">
+        <section class="hijo">
+                <span id="icon"><i class="fa-solid fa-user"></i></span>
+            <div class="login">
+            <form action="" class="nieto">
+                <input type="email" name="" placeholder="Email" class="campos">
+                <input type="password" name="" placeholder="Password" class="campos">
+                <label for="checkbox" id="rm"><input type="checkbox" name="" id="checkbox"><span>Remember me</span></label>
+                <button class="submit">Login</button>
             </form>
+        <div class="ancla">
             <a href="#" id="fp">Forgot password?</a>
             <a href="#" id="ca">Create account</a>
+        </div>
+            </div>
         </section>
     </article>
 </body>

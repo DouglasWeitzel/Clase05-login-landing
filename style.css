@@ -1,35 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
+    font-family: "Poppins";
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
 body{
-    background-color: brown;
+    flex-direction: column;
+    display: flex;
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div{
     align-items: center;
     justify-content: center;
 }
 
-article{
+.padre{
+    padding: 40px;
     flex-direction: column;
-    background-color: blueviolet;
+    background-color: #CCD1D1;
     width: 460px;
     height: 600px;
 }
 
-form {
-    flex-direction: block;
-
+.hijo{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#email, #password {
-    width: 90%;
+.login{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nieto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgba(137, 43, 226, 0.425);
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+#icon i{
+    transform: scale(3.5);
+    color: blueviolet;
+}
+
+.campos{
+    width: 274px;
+    height: 48px;
+    margin: 5px 0px;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px rgb(153, 149, 149) solid;
+}
+
+.login ::placeholder{
+    color: gray;
+    font-size: 20px;
+}
+
+.rm{
+    
+}
+
+#checkbox{
+    width: 17px;
+    height: 17px;
+    margin: 30px 10px 30px 0;
+}
+
+span{
+    font-size: 20px;
+    color: rgb(68, 66, 66);
+}
+
+.submit{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 186px;
+    height: 48px;
+    background-color: blueviolet;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+}
+
+.ancla{
+    margin-top: 50px;
+    display: flex;
+    font-size: 18px;
+}
+
+a{
+    margin: 0 15px 0 15px;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+button:active{
+    transition: 0s;
+    color: rgb(129, 125, 125);
+    background-color: yellow;
+}
+
+/* En efecto, esto es un trolleo*/
+#fp:hover{
+    transition: 0.25s;
+    opacity: 0;
 }
